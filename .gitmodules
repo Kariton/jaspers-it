@@ -1,0 +1,6 @@
+[submodule "themes/github.com/bowman2001/perplex"]
+	path = themes/github.com/bowman2001/perplex
+	url = https://github.com/bowman2001/perplex.git
+[submodule "themes/github.com/kariton/perplex"]
+	path = themes/github.com/kariton/perplex
+	url = git@github.com:kariton/perplex.git

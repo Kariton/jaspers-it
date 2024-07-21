@@ -1,0 +1,73 @@
+##
+## Main configuration file
+##
+
+# The domain of the site
+baseURL: http://localhost:1313
+title: Jaspers IT
+DefaultLanguageCode: en-us
+DefaultContentLanguage: en
+metaDataFormat: yaml
+pluralizeListTitles: false
+enableEmoji: true
+enableGitInfo: true
+disableHugoGeneratorInject: false
+enableRobotsTXT: true
+
+timeout: "600s"
+
+outputFormats:
+    htaccess:
+        baseName: ""
+        isPlainText: true
+        mediaType: "text/htaccess"
+        notAlternative: true
+    humanstxt:
+      baseName: "humans"
+      isPlainText: true
+      mediaType: "text/plain"
+      root: true
+
+mediaTypes:
+    "text/htaccess":
+        suffixes: "htaccess"
+
+outputs:
+  home: [HTML, RSS, htaccess, humanstxt]
+  section: [HTML]
+
+taxonomies:
+  tag: tags
+  category: categories
+  series: series
+  author: authors
+
+refLinksErrorLevel: WARNING
+
+ignoreErrors:
+  - error-missing-instagram-accesstoken
+  - error-remote-getjson
+
+caches:
+  assets:
+    dir: :resourceDir/_gen
+    maxAge: -1
+  getcsv:
+    dir: :cacheDir/:project
+    maxAge: -1
+  getjson:
+    dir: :cacheDir/:project
+    maxAge: -1
+  getresource:
+    dir: :resourceDir/:project
+    maxAge: -1
+  images:
+    dir: :resourceDir/_gen
+    maxAge: -1
+  modules:
+    dir: :cacheDir/modules
+    maxAge: -1
+
+build:
+  buildStats:
+    enable: true

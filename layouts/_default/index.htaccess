@@ -1,0 +1,33 @@
+# error pages
+{{- if .Site.IsMultiLingual }}
+ErrorDocument 404 {{ print .Site.LanguagePrefix "/" | absURL }}404/
+{{ else }}
+ErrorDocument 404 {{ "/404/" absURL }}
+{{ end }}
+
+# hugo aliases
+{{- range site.Pages -}}
+  {{- if .Aliases -}}
+    {{- $rTarget := .RelPermalink -}}
+    {{- range .Aliases -}}
+      {{- if strings.HasSuffix . "/" }}
+Redirect 301 {{ . }} {{ $rTarget }}
+Redirect 301 {{ strings.TrimSuffix "/" . }} {{ $rTarget }}
+      {{- end }}
+      {{- if not (strings.HasSuffix . "/") }}
+Redirect 301 {{ . }}/ {{ $rTarget }}
+Redirect 301 {{ . }} {{ $rTarget }}
+      {{- end }}
+    {{- end -}}
+  {{- end -}}
+{{ end }}
+
+# static redirects
+{{ if site.Params.redirectsExtra -}}
+{{- range site.Params.redirectsExtra }}
+Redirect {{ . }}
+{{- end -}}
+{{- end -}}
+{{- range site.Params.redirectMatches }}
+RedirectMatch {{ . }}
+{{ end }}

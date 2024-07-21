@@ -1,0 +1,1078 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.telemetry.disable": true,
+  "frontMatter.git.enabled": true,
+  "frontMatter.git.requiresCommitMessage": [
+    "main"
+  ],
+  "frontMatter.framework.startCommand": "hugo server -D --navigateToChanged --disableFastRender --renderToMemory",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.panel.freeform": true,
+  "frontMatter.content.publicFolder": {
+    "path": "content",
+    "relative": true
+  },
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Content",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de"
+        }
+      ],
+      "contentTypes": [
+        "content-standalone",
+        "content-categorie"
+      ]
+    },
+    {
+      "title": "Author",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/authors/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/authors"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/authors"
+        }
+      ],
+      "contentTypes": [
+        "author"
+      ]
+    },
+    {
+      "title": "Blog Post",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/blog/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/blog"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/blog"
+        }
+      ],
+      "contentTypes": [
+        "article"
+      ]
+    },
+    {
+      "title": "Categorie",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/categories/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/categories"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/categories"
+        }
+      ],
+      "contentTypes": [
+        "taxonomy"
+      ]
+    },
+    {
+      "title": "Documentation",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/doc/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/doc"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/doc"
+        }
+      ],
+      "contentTypes": [
+        "doc",
+        "doc-section"
+      ]
+    },
+    {
+      "title": "Legal",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/legal/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/legal"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/legal"
+        }
+      ],
+      "disableCreation": true
+    },
+    {
+      "title": "News",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/news/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/news"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/news"
+        }
+      ],
+      "contentTypes": [
+        "article"
+      ]
+    },
+    {
+      "title": "Series",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/series/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/series"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/series"
+        }
+      ],
+      "contentTypes": [
+        "taxonomy"
+      ]
+    },
+    {
+      "title": "Tag",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/tags/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/tags"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/tags"
+        }
+      ],
+      "contentTypes": [
+        "taxonomy"
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "common",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true,
+          "required": true,
+          "description": "Page title"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "default": null,
+          "description": "Appears in navigational elements like the section overview or small cards"
+        },
+        {
+          "title": "Link Title",
+          "name": "linktitle",
+          "single": true,
+          "type": "string",
+          "default": null,
+          "description": "Optional short title which is used for navigational elements and defaults to the title value"
+        },
+        {
+          "title": "Subtitle",
+          "name": "subtitle",
+          "type": "boolean",
+          "default": true,
+          "description": "Set to true if you want the short description to appear as a subtitle beneath the page title"
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "draft",
+          "description": "Mark site as draft"
+        },
+        {
+          "title": "Last modified date",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
+        }
+      ]
+    },
+    {
+      "id": "author",
+      "fields": [
+        {
+          "title": "Authors",
+          "name": "authors",
+          "type": "list",
+          "description": "Site authors",
+          "required": true
+        },
+        {
+          "title": "Date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "required": true,
+          "isPublishDate": true,
+          "description": "Documentation pages are ordered by their weight. News, blog, and article postings are ordered by the publishing date. Add a weight number to override."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "fields": [
+        {
+          "title": "Name",
+          "name": "name",
+          "single": true,
+          "type": "string",
+          "description": "Tooltip text"
+        },
+        {
+          "title": "Icon",
+          "name": "icon",
+          "single": true,
+          "type": "string",
+          "description": "Icon name from https://simpleicons.org"
+        },
+        {
+          "title": "URL",
+          "name": "url",
+          "single": true,
+          "type": "string",
+          "description": "Link to contact"
+        }
+      ]
+    },
+    {
+      "id": "menu",
+      "fields": [
+        {
+          "title": "Identifier",
+          "name": "identifier",
+          "type": "string",
+          "single": true,
+          "description": "Internal name, that lets other pages refer to this one as their parent"
+        },
+        {
+          "title": "Name",
+          "name": "name",
+          "type": "string",
+          "single": true,
+          "description": "Title of the menu entry"
+        },
+        {
+          "title": "Parent",
+          "name": "parent",
+          "type": "string",
+          "single": true,
+          "description": "Current page is placed a level beyond its parent"
+        },
+        {
+          "title": "Icon",
+          "name": "pre",
+          "type": "string",
+          "single": true,
+          "description": "Icon name from https://simpleicons.org"
+        },
+        {
+          "title": "Weight",
+          "name": "weight",
+          "type": "number",
+          "description": "Lets a page fall deeper in the hierarchy of the section, the higher it gets."
+        }
+      ]
+    },
+    {
+      "id": "taxonomy",
+      "fields": [
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Series",
+          "name": "series",
+          "type": "list"
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "fields": [
+        {
+          "title": "Image Source",
+          "name": "src",
+          "type": "image",
+          "required": true
+        },
+        {
+          "title": "Image Name",
+          "name": "name",
+          "type": "string",
+          "single": true,
+          "required": true,
+          "default": "featured"
+        },
+        {
+          "title": "Image Parameters",
+          "name": "params",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Alt Text",
+              "name": "alt",
+              "type": "string",
+              "single": true,
+              "description": "Alternative text for the image"
+            },
+            {
+              "title": "Attribution",
+              "name": "attr",
+              "type": "string",
+              "single": true,
+              "description": "Attribution text for the image"
+            },
+            {
+              "title": "Attribution Link",
+              "name": "attrlink",
+              "type": "string",
+              "single": true,
+              "description": "Link for the image attribution"
+            },
+            {
+              "title": "Image Link",
+              "name": "link",
+              "type": "string",
+              "single": true,
+              "description": "URL for a linked image"
+            },
+            {
+              "title": "Anchor Position",
+              "name": "anchor",
+              "type": "choice",
+              "choices": [
+                "",
+                "Smart",
+                "TopLeft",
+                "Top",
+                "TopRight",
+                "Left",
+                "Center",
+                "Right",
+                "BottomLeft",
+                "Bottom",
+                "BottomRight"
+              ],
+              "description": "Position of the image anchor"
+            },
+            {
+              "title": "Zoom Level",
+              "name": "zoom",
+              "type": "number",
+              "numberOptions": {
+                "min": 1,
+                "max": 4,
+                "step": 0.1,
+                "isDecimal": true
+              },
+              "description": "Zoom level of the image"
+            },
+            {
+              "title": "Caption",
+              "name": "caption",
+              "type": "string",
+              "single": true,
+              "description": "Caption text for the image"
+            },
+            {
+              "title": "Aspect Ratio",
+              "name": "ratio",
+              "type": "number",
+              "numberOptions": {
+                "min": 0.2,
+                "max": 5,
+                "step": 0.1,
+                "isDecimal": true
+              },
+              "description": "Aspect ratio of the image"
+            },
+            {
+              "title": "Tooltip",
+              "name": "hint",
+              "type": "string",
+              "single": true,
+              "description": "Tooltip text for the image"
+            },
+            {
+              "title": "Box Style",
+              "name": "box",
+              "type": "choice",
+              "choices": [
+                "",
+                "shadow",
+                "none"
+              ],
+              "description": "Style of the image box"
+            },
+            {
+              "title": "Width",
+              "name": "width",
+              "type": "choice",
+              "choices": [
+                "",
+                "micro",
+                "tiny",
+                "small",
+                "text",
+                "medium",
+                "large",
+                "xlarge"
+              ],
+              "description": "Width of the image. embedded: [micro, tiny, small, text], figure: [tiny, small, medium, text, large, xlarge]"
+            },
+            {
+              "title": "Rotation",
+              "name": "rotate",
+              "type": "choice",
+              "choices": [
+                "",
+                "90right",
+                "90left",
+                "180"
+              ],
+              "description": "Rotate the image"
+            },
+            {
+              "title": "Image Type",
+              "name": "type",
+              "type": "choice",
+              "choices": [
+                "",
+                "symbol",
+                "image"
+              ],
+              "description": "Type of the image. Symbol images are never preprocessed"
+            },
+            {
+              "title": "Background Shade",
+              "name": "background",
+              "type": "choice",
+              "choices": [
+                "",
+                "dim",
+                "light",
+                "none"
+              ],
+              "description": "Background shade of the image"
+            },
+            {
+              "title": "Padding",
+              "name": "padding",
+              "type": "choice",
+              "choices": [
+                "",
+                "half",
+                "one",
+                "two",
+                "three",
+                "none"
+              ],
+              "description": "Padding around a symbole (inside a box)"
+            },
+            {
+              "title": "CSS Class",
+              "name": "class",
+              "type": "string",
+              "single": true,
+              "description": "CSS Class for special styling of the image"
+            },
+            {
+              "title": "Horizontal position",
+              "name": "posh",
+              "type": "choice",
+              "choices": [
+                "",
+                "left",
+                "right"
+              ],
+              "description": "Position of image"
+            },
+            {
+              "title": "Vertical position",
+              "name": "posv",
+              "type": "choice",
+              "choices": [
+                "",
+                "top",
+                "middle"
+              ],
+              "description": "Position of embedded image"
+            },
+            {
+              "title": "Link related",
+              "name": "rel",
+              "type": "string",
+              "single": true,
+              "description": "See MDN web docs https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perplex",
+      "fields": [
+        {
+          "title": "Picture",
+          "name": "featured",
+          "type": "string",
+          "single": true,
+          "default": null,
+          "description": "Featured picture from inheritance"
+        },
+        {
+          "title": "Weight",
+          "name": "weight",
+          "type": "number",
+          "default": 9999,
+          "description": "Documentation pages are ordered by their weight. News, blog, and article postings are ordered by the publishing date. Add a weight number to override."
+        },
+        {
+          "title": "Math",
+          "name": "math",
+          "type": "boolean",
+          "default": false,
+          "description": "Set to true if you want to enable KaTeX math formula rendering"
+        },
+        {
+          "title": "Chem",
+          "name": "chem",
+          "type": "boolean",
+          "default": false,
+          "description": "Set to true if you want to enable KaTeX chemical formula rendering"
+        },
+        {
+          "title": "Mermaid",
+          "name": "mermaid",
+          "type": "boolean",
+          "default": false,
+          "description": "Set to true if you want to enable Mermaid rendering"
+        },
+        {
+          "title": "Content Language",
+          "name": "contentlanguage",
+          "default": "en",
+          "type": "choice",
+          "choices": [
+            "en",
+            "de"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "hugo",
+      "fields": [
+        {
+          "title": "Table of Content",
+          "name": "toc",
+          "type": "boolean",
+          "default": true,
+          "description": "Set to false if you want to hide the ToC"
+        },
+        {
+          "title": "Aliases",
+          "name": "aliases",
+          "type": "list",
+          "default": [],
+          "description": "Aliases for direct links to this page"
+        }
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "content-categorie",
+      "pageBundle": true,
+      "defaultFileName": "_index",
+      "fields": [
+        {
+          "name": "Common Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "common"
+        },
+        {
+          "title": "Configure Main Menu",
+          "name": "frontmatter_configure_menu",
+          "type": "boolean",
+          "default": false,
+          "description": "Configure main menu entry"
+        },
+        {
+          "title": "Main Menu",
+          "name": "menu",
+          "type": "fields",
+          "fields": [
+            {
+              "name": "main",
+              "type": "fieldCollection",
+              "fieldGroup": "menu",
+              "default": {}
+            }
+          ],
+          "when": {
+            "fieldRef": "frontmatter_configure_menu",
+            "operator": "eq",
+            "value": true,
+            "caseSensitive": false
+          }
+        },
+        {
+          "title": "Configure SEO",
+          "name": "frontmatter_configure_seo",
+          "type": "boolean",
+          "default": false,
+          "description": "Configure SEO title and description"
+        },
+        {
+          "title": "SEO Fields",
+          "name": "seo",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "SEO Title",
+              "name": "title",
+              "type": "string",
+              "single": true,
+              "default": null
+            },
+            {
+              "title": "SEO Description",
+              "name": "description",
+              "type": "string",
+              "default": null
+            }
+          ],
+          "when": {
+            "fieldRef": "frontmatter_configure_seo",
+            "operator": "eq",
+            "value": true,
+            "caseSensitive": false
+          }
+        },
+        {
+          "name": "Perplex Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "perplex"
+        },
+        {
+          "title": "Resources",
+          "name": "resources",
+          "type": "block",
+          "default": {},
+          "fieldGroup": [
+            "resources"
+          ]
+        },
+        {
+          "name": "Hugo Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "hugo"
+        }
+      ]
+    },
+    {
+      "name": "content-standalone",
+      "pageBundle": true,
+      "defaultFileName": "index",
+      "fields": [
+        {
+          "name": "Common Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "common"
+        },
+        {
+          "title": "Configure Main Menu",
+          "name": "frontmatter_configure_menu",
+          "type": "boolean",
+          "default": false,
+          "description": "Configure main menu entry"
+        },
+        {
+          "title": "Main Menu",
+          "name": "menu",
+          "type": "fields",
+          "fields": [
+            {
+              "name": "main",
+              "type": "fieldCollection",
+              "fieldGroup": "menu",
+              "default": {}
+            }
+          ],
+          "when": {
+            "fieldRef": "frontmatter_configure_menu",
+            "operator": "eq",
+            "value": true,
+            "caseSensitive": false
+          }
+        },
+        {
+          "title": "Configure SEO",
+          "name": "frontmatter_configure_seo",
+          "type": "boolean",
+          "default": false,
+          "description": "Configure SEO title and description"
+        },
+        {
+          "title": "SEO Fields",
+          "name": "seo",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "SEO Title",
+              "name": "title",
+              "type": "string",
+              "single": true,
+              "default": null
+            },
+            {
+              "title": "SEO Description",
+              "name": "description",
+              "type": "string",
+              "default": null
+            }
+          ],
+          "when": {
+            "fieldRef": "frontmatter_configure_seo",
+            "operator": "eq",
+            "value": true,
+            "caseSensitive": false
+          }
+        },
+        {
+          "name": "Perplex Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "perplex"
+        },
+        {
+          "title": "Resources",
+          "name": "resources",
+          "type": "block",
+          "default": {},
+          "fieldGroup": [
+            "resources"
+          ]
+        },
+        {
+          "name": "Hugo Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "hugo"
+        }
+      ]
+    },
+    {
+      "name": "article",
+      "pageBundle": true,
+      "allowAsSubContent": true,
+      "defaultFileName": "index",
+      "fields": [
+        {
+          "name": "Common Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "common"
+        },
+        {
+          "name": "Author",
+          "type": "fieldCollection",
+          "fieldGroup": "author",
+          "required": true
+        },
+        {
+          "name": "Perplex Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "perplex"
+        },
+        {
+          "title": "Resources",
+          "name": "resources",
+          "type": "block",
+          "default": {},
+          "fieldGroup": [
+            "resources"
+          ]
+        },
+        {
+          "name": "Taxonomy",
+          "type": "fieldCollection",
+          "fieldGroup": "taxonomy"
+        },
+        {
+          "name": "Hugo Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "hugo"
+        }
+      ]
+    },
+    {
+      "name": "author",
+      "pageBundle": true,
+      "defaultFileName": "_index",
+      "fields": [
+        {
+          "name": "Common Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "common"
+        },
+        {
+          "title": "Follow Info",
+          "name": "follow_icons",
+          "type": "block",
+          "default": [],
+          "fieldGroup": [
+            "contact"
+          ]
+        },
+        {
+          "title": "Contact Info",
+          "name": "contact_icons",
+          "type": "block",
+          "default": [],
+          "fieldGroup": [
+            "contact"
+          ]
+        },
+        {
+          "name": "Perplex Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "perplex"
+        },
+        {
+          "title": "Resources",
+          "name": "resources",
+          "type": "block",
+          "default": {},
+          "fieldGroup": [
+            "resources"
+          ]
+        },
+        {
+          "name": "Hugo Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "hugo"
+        }
+      ]
+    },
+    {
+      "name": "doc",
+      "pageBundle": true,
+      "allowAsSubContent": true,
+      "defaultFileName": "_index",
+      "fields": [
+        {
+          "name": "Common Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "common"
+        },
+        {
+          "name": "Author",
+          "type": "fieldCollection",
+          "fieldGroup": "author",
+          "required": true
+        },
+        {
+          "title": "Doc Menu",
+          "name": "menu",
+          "type": "fields",
+          "fields": [
+            {
+              "name": "doc",
+              "type": "fieldCollection",
+              "fieldGroup": "menu"
+            }
+          ]
+        },
+        {
+          "name": "Perplex Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "perplex"
+        },
+        {
+          "title": "Resources",
+          "name": "resources",
+          "type": "block",
+          "default": {},
+          "fieldGroup": [
+            "resources"
+          ]
+        },
+        {
+          "name": "Taxonomy",
+          "type": "fieldCollection",
+          "fieldGroup": "taxonomy"
+        },
+        {
+          "name": "Hugo Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "hugo"
+        }
+      ]
+    },
+    {
+      "name": "doc-section",
+      "pageBundle": true,
+      "allowAsSubContent": true,
+      "defaultFileName": "index",
+      "fields": [
+        {
+          "name": "Common Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "common"
+        },
+        {
+          "name": "Author",
+          "type": "fieldCollection",
+          "fieldGroup": "author",
+          "required": true
+        },
+        {
+          "title": "Doc Menu",
+          "name": "menu",
+          "type": "fields",
+          "default": {},
+          "fields": [
+            {
+              "name": "doc",
+              "type": "fieldCollection",
+              "fieldGroup": "menu"
+            }
+          ]
+        },
+        {
+          "name": "Perplex Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "perplex"
+        },
+        {
+          "title": "Resources",
+          "name": "resources",
+          "type": "block",
+          "default": {},
+          "fieldGroup": [
+            "resources"
+          ]
+        },
+        {
+          "name": "Taxonomy",
+          "type": "fieldCollection",
+          "fieldGroup": "taxonomy"
+        },
+        {
+          "name": "Hugo Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "hugo"
+        }
+      ]
+    },
+    {
+      "name": "taxonomy",
+      "pageBundle": true,
+      "defaultFileName": "_index",
+      "fields": [
+        {
+          "name": "Common Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "common"
+        },
+        {
+          "name": "Perplex Fields",
+          "type": "fieldCollection",
+          "fieldGroup": "perplex"
+        },
+        {
+          "title": "Resources",
+          "name": "resources",
+          "type": "block",
+          "default": {},
+          "fieldGroup": [
+            "resources"
+          ]
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.snippets": {}
+}

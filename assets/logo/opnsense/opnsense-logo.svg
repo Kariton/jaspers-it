@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW X8 -->
+
+<svg
+   xml:space="preserve"
+   width="33.42461mm"
+   height="34.344769mm"
+   version="1.1"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 4250 4366.6275"
+   id="svg29"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+ <defs
+   id="defs8"><style
+     type="text/css"
+     id="style1">
+   <![CDATA[
+    .fil0 {fill:#EBECEC;fill-rule:nonzero}
+    .fil2 {fill:#E3E4E5;fill-rule:nonzero}
+    .fil8 {fill:#AAABAB;fill-rule:nonzero}
+    .fil5 {fill:#939292;fill-rule:nonzero}
+    .fil1 {fill:#D94F00;fill-rule:nonzero}
+    .fil11 {fill:url(#id0);fill-rule:nonzero}
+    .fil7 {fill:url(#id1);fill-rule:nonzero}
+    .fil10 {fill:url(#id2);fill-rule:nonzero}
+    .fil15 {fill:url(#id3);fill-rule:nonzero}
+    .fil14 {fill:url(#id4);fill-rule:nonzero}
+    .fil16 {fill:url(#id5);fill-rule:nonzero}
+    .fil9 {fill:url(#id6);fill-rule:nonzero}
+    .fil12 {fill:url(#id7);fill-rule:nonzero}
+    .fil13 {fill:url(#id8);fill-rule:nonzero}
+    .fil3 {fill:url(#id9);fill-rule:nonzero}
+    .fil4 {fill:url(#id10);fill-rule:nonzero}
+    .fil6 {fill:url(#id11);fill-rule:nonzero}
+   ]]>
+  </style><linearGradient
+     id="id0"
+     gradientUnits="userSpaceOnUse"
+     x1="2258.1799"
+     y1="2586.0901"
+     x2="4329.8901"
+     y2="3125.0801">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#AAABAB"
+   id="stop1" />
+   <stop
+   offset="0.101961"
+   style="stop-opacity:1; stop-color:#AAABAB"
+   id="stop2" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4E4E4E"
+   id="stop3" />
+  </linearGradient><linearGradient
+     id="id1"
+     gradientUnits="userSpaceOnUse"
+     x1="4003.8501"
+     y1="4057.4099"
+     x2="4106.6299"
+     y2="3796.3799">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#E4E4E4"
+   id="stop4" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#A2A2A2"
+   id="stop5" />
+  </linearGradient><linearGradient
+     id="id2"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id0"
+     x1="2258.1599"
+     y1="1781.29"
+     x2="4329.8999"
+     y2="1242.3">
+  </linearGradient><linearGradient
+     id="id3"
+     gradientUnits="userSpaceOnUse"
+     x1="4249.5098"
+     y1="3279.4099"
+     x2="2665.3899"
+     y2="3279.4099">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#FEFEFE"
+   id="stop6" />
+   <stop
+   offset="0.231373"
+   style="stop-opacity:1; stop-color:#FEFEFE"
+   id="stop7" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#B0B0B0"
+   id="stop8" />
+  </linearGradient><linearGradient
+     id="id4"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id3"
+     x1="4249.5098"
+     y1="1087.97"
+     x2="2665.3899"
+     y2="1087.97">
+  </linearGradient><linearGradient
+     id="id5"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id3"
+     x1="-0.0127153"
+     y1="3279.4099"
+     x2="1584.11"
+     y2="3279.4099">
+  </linearGradient><linearGradient
+     id="id6"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id0"
+     x1="1991.34"
+     y1="1781.3101"
+     x2="-80.3479"
+     y2="1242.28">
+  </linearGradient><linearGradient
+     id="id7"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id0"
+     x1="1991.33"
+     y1="2586.0701"
+     x2="-80.335197"
+     y2="3125.0901">
+  </linearGradient><linearGradient
+     id="id8"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id3"
+     x1="-0.0127153"
+     y1="1087.97"
+     x2="1584.11"
+     y2="1087.97">
+  </linearGradient><linearGradient
+     id="id9"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id1"
+     x1="4048.8899"
+     y1="285.509"
+     x2="4123.2798"
+     y2="547.495">
+  </linearGradient><linearGradient
+     id="id10"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id1"
+     x1="245.672"
+     y1="309.97299"
+     x2="142.882"
+     y2="571.01801">
+  </linearGradient><linearGradient
+     id="id11"
+     gradientUnits="userSpaceOnUse"
+     xlink:href="#id1"
+     x1="200.647"
+     y1="4081.8601"
+     x2="126.237"
+     y2="3819.9299">
+  </linearGradient><linearGradient
+     xlink:href="#id1"
+     id="linearGradient2"
+     gradientUnits="userSpaceOnUse"
+     x1="4003.8501"
+     y1="4057.4099"
+     x2="4106.6299"
+     y2="3796.3799" /><linearGradient
+     xlink:href="#id0"
+     id="linearGradient3"
+     gradientUnits="userSpaceOnUse"
+     x1="2258.1799"
+     y1="2586.0901"
+     x2="4329.8901"
+     y2="3125.0801" /><linearGradient
+     xlink:href="#id3"
+     id="linearGradient4"
+     gradientUnits="userSpaceOnUse"
+     x1="4249.5098"
+     y1="3279.4099"
+     x2="2665.3899"
+     y2="3279.4099" /></defs>
+ <g
+   id="Layer_x0020_1"
+   transform="translate(0,-0.18611436)">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  
+  
+  
+  <path
+   class="fil2"
+   d="M 4250,404 H 3923 V 336 H 483 c -14,0 -25,2 -39,5 v 0 0 h -1 l -17,6 -3,1 -2,1 -3,2 -13,7 v 0 l -3,1 v 1 l -6,3 v 0 l -5,4 v 0 l -2,2 v 0 l -3,2 v 0 l -2,1 v 1 l -2,2 v 0 l -3,2 -2,2 v 0 l -2,2 v 0 l -5,5 v 0 l -1,2 v 0 l -3,3 -2,1 h 1 l -3,3 v 0 l -1,1 v 1 l -2,2 v 1 l -2,2 v 0 l -1,2 H 13 V 381 C 64,163 256,0 483,0 v 0 h 3767 v 333 3 z"
+   id="path12" />
+  <polygon
+   class="fil3"
+   points="4250,333 4250,336 4250,497 3924,672 3923,672 3923,337 4250,161 "
+   id="polygon12"
+   style="fill:url(#id9)" />
+  <path
+   class="fil4"
+   d="m 90,209 299,160 -3,2 v 0 l -2,1 v 1 l -2,2 v 0 l -3,2 -2,2 v 0 l -2,2 v 0 l -5,5 v 0 l -1,2 v 0 l -3,3 -2,1 h 1 l -3,3 v 0 l -1,1 v 1 l -2,2 v 1 l -2,2 v 0 l -3,5 -1,1 -3,5 v 0 l -2,3 v 1 l -7,12 v 1 l -1,3 v 0 l -1,2 -1,2 v 1 l -6,19 c 0,-1 -5,26 -5,39 v 0 176 L 0,497 v -1 C 0,389 33,290 90,209 Z"
+   id="path13"
+   style="fill:url(#id10)" />
+  <polygon
+   class="fil5"
+   points="654,672 3596,672 3596,1008 654,1008 "
+   id="polygon13" />
+  <path
+   class="fil2"
+   d="m 0,3964 h 327 v 67 h 3440 v 0 c 14,0 25,-1 38,-5 h 1 v 0 0 l 18,-6 2,-1 2,-1 4,-1 12,-7 v 0 l 3,-2 h 1 l 5,-4 v 0 l 5,-3 v -1 l 3,-2 v 0 l 3,-2 v 0 l 1,-1 v 0 l 3,-2 v 0 l 3,-3 1,-1 v -1 l 2,-1 v 0 l 5,-5 v -1 l 2,-1 v 0 l 2,-3 2,-2 v 0 l 2,-3 v 0 l 1,-1 v 0 l 2,-3 v 0 l 2,-3 h 1 l 1,-1 h 342 v 23 c -51,218 -242,380 -469,380 v 0 H 0 v -332 -4 z"
+   id="path14" />
+  <polygon
+   class="fil6"
+   points="0,4035 0,4031 0,3870 325,3695 327,3695 327,4031 0,4206 "
+   id="polygon14"
+   style="fill:url(#id11)" />
+  <path
+   class="fil7"
+   d="m 4160,4158 -299,-160 3,-2 v 0 l 1,-1 v 0 l 3,-2 v 0 l 3,-3 1,-1 v -1 l 2,-1 v 0 l 5,-5 v -1 l 2,-1 v 0 l 2,-3 2,-2 v 0 l 2,-3 v 0 l 1,-1 v 0 l 2,-3 v 0 l 2,-3 h 1 l 3,-5 v 0 l 4,-6 v 0 l 2,-3 v 0 l 6,-13 1,-1 1,-2 v -1 l 1,-2 v -1 l 1,-1 6,-19 c 0,0 5,-27 5,-40 v 0 -175 l 327,174 v 1 c -1,107 -34,206 -90,287 z"
+   id="path15"
+   style="fill:url(#linearGradient2)" />
+  <polygon
+   class="fil8"
+   points="327,1344 1584,1344 1584,1680 327,1680 "
+   id="polygon15" />
+  <polygon
+   class="fil9"
+   points="327,1344 960,1344 1584,1678 1584,1680 949,1680 327,1346 "
+   id="polygon16"
+   style="fill:url(#id6)" />
+  <polygon
+   class="fil8"
+   points="3923,1344 2665,1344 2665,1680 3923,1680 "
+   id="polygon17" />
+  <polygon
+   class="fil10"
+   points="3923,1344 3289,1344 2665,1678 2665,1680 3300,1680 3923,1346 "
+   id="polygon18"
+   style="fill:url(#id2)" />
+  <polygon
+   class="fil8"
+   points="3923,3024 2665,3024 2665,2688 3923,2688 "
+   id="polygon19" />
+  <polygon
+   class="fil11"
+   points="3923,3024 3289,3024 2665,2689 2665,2688 3300,2688 3923,3021 "
+   id="polygon20"
+   style="fill:url(#linearGradient3)" />
+  <polygon
+   class="fil8"
+   points="327,3024 1584,3024 1584,2688 327,2688 "
+   id="polygon21" />
+  <polygon
+   class="fil12"
+   points="327,3024 960,3024 1584,2689 1584,2688 949,2688 327,3021 "
+   id="polygon22"
+   style="fill:url(#id7)" />
+  <polygon
+   class="fil13"
+   points="0,496 1584,1344 1584,1680 0,832 "
+   id="polygon23"
+   style="fill:url(#id8)" />
+  <polygon
+   class="fil14"
+   points="4250,496 2665,1344 2665,1680 4250,832 "
+   id="polygon24"
+   style="fill:url(#id4)" />
+  <polygon
+   class="fil5"
+   points="660,3360 3602,3360 3602,3695 660,3695 "
+   id="polygon25" />
+  <polygon
+   class="fil15"
+   points="4250,3871 2665,3024 2665,2688 4250,3535 "
+   id="polygon26"
+   style="fill:url(#linearGradient4)" />
+  <polygon
+   class="fil16"
+   points="0,3871 1584,3024 1584,2688 0,3535 "
+   id="polygon27"
+   style="fill:url(#id5)" />
+  <polygon
+   class="fil1"
+   points="3595,1854 3595,1518 2665,2016 2665,2016 2665,2016 2665,2351 2665,2352 2665,2352 2666,2352 3596,2849 3596,2513 3294,2352 4250,2352 4250,2016 3293,2016 "
+   id="polygon28" />
+  <polygon
+   class="fil1"
+   points="957,2016 0,2016 0,2352 956,2352 654,2513 654,2849 1584,2352 1584,2352 1584,2352 1584,2351 1584,2016 1584,2016 1584,2016 654,1518 654,1854 "
+   id="polygon29" />
+ </g>
+</svg>

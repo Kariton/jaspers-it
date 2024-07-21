@@ -1,0 +1,47 @@
+#####################################################################
+#                            Build Stage                            #
+#####################################################################
+FROM hugomods/hugo:exts AS builder
+
+ARG HUGO_ENV
+ENV HUGO_ENV ${HUGO_ENV}
+ARG HUGO_ENVIRONMENT
+ENV HUGO_ENVIRONMENT ${HUGO_ENVIRONMENT}
+
+COPY . /src
+RUN hugo --gc --minify
+
+# Generate pagefind index
+RUN npm_config_yes=true npx pagefind
+
+#####################################################################
+#                              Publish                              #
+#####################################################################
+FROM alpine:latest
+
+ARG SFTP_USERNAME
+ENV SFTP_USERNAME ${SFTP_USERNAME}
+ARG SFTP_SSH_KEY
+ENV SFTP_SSH_KEY ${SFTP_SSH_KEY}
+ARG SFTP_HOST
+ENV SFTP_HOST ${SFTP_HOST}
+ARG SFTP_DIRECTORY
+ENV SFTP_DIRECTORY ${SFTP_DIRECTORY}
+
+RUN apk add --update-cache \
+        openssh \
+        lftp \
+    && rm -rf /var/cache/apk/*
+
+RUN mkdir -p ~/.ssh &&\
+    echo -e "${SFTP_SSH_KEY}" > ~/.ssh/id_ed25519  &&\
+    chmod 600 ~/.ssh/id_ed25519 && \
+    ssh-keyscan -p 22 -t ed25519 "${SFTP_HOST}" >> ~/.ssh/known_hosts
+
+COPY --from=builder /src/public /public
+
+RUN lftp -e " \
+        set sftp:connect-program 'ssh -a -x -i ~/.ssh/id_ed25519'; \
+        mirror -vv --no-empty-dirs --no-symlinks --delete --reverse ./public ${SFTP_DIRECTORY}; \
+        bye \
+        " -u "${SFTP_USERNAME}", sftp://${SFTP_HOST}

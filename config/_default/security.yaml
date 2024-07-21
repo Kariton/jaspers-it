@@ -1,0 +1,21 @@
+#
+# Hugo security settings
+#
+
+enableInlineShortcodes: false
+exec:
+  allow:
+    # - ^dart-sass-embedded$
+    # - ^go$
+    # - ^postcss$
+    # - ^npx$ # Needed for postcss
+  osEnv:
+    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
+funcs:
+  getenv:
+    - ^HUGO_
+http:
+  methods:
+    - (?i)GET|POST
+  urls:
+    - .*

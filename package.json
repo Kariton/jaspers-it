@@ -1,0 +1,15 @@
+{
+    "dependencies": {
+      "pagefind": "^1.1.0",
+      "@fullhuman/postcss-purgecss": "^5.0.0",
+      "postcss": "^8.4.38",
+      "postcss-cli": "^10.1.0"  
+    },
+    "name": "jaspers-it",
+    "version": "0.1.0",
+    "description": "my personal website",
+    "main": "index.js",
+    "repository": "https://github.com/Kariton/jaspers-it",
+    "author": "Timo Jaspers",
+    "license": "Apache-2.0"
+}

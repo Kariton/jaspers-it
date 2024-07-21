@@ -1,0 +1,79 @@
+#
+# Configuration section for Markdown rendering
+#
+
+# Goldmark is Commonmark-compliant
+goldmark:
+  duplicateResourceFiles: false
+  extensions:
+    cjk:
+      eastAsianLineBreaks: false
+      eastAsianLineBreaksStyle: simple
+      enable: false
+      escapedSpace: false
+    definitionList: true
+    extras:
+      delete:
+        enable: true # false
+      insert:
+        enable: true # false
+      mark:
+        enable: true # false
+      subscript:
+        enable: true # false
+      superscript:
+        enable: true # false
+    footnote: true
+    linkify: true
+    linkifyProtocol: https
+    passthrough:
+      delimiters:
+        block: []
+        inline: []
+      enable: false
+    strikethrough: true
+    table: true
+    taskList: true
+    typographer:
+      apostrophe: '&rsquo;'
+      disable: false
+      ellipsis: '&hellip;'
+      emDash: '&mdash;'
+      enDash: '&ndash;'
+      leftAngleQuote: '&laquo;'
+      leftDoubleQuote: '&ldquo;'
+      leftSingleQuote: '&lsquo;'
+      rightAngleQuote: '&raquo;'
+      rightDoubleQuote: '&rdquo;'
+      rightSingleQuote: '&rsquo;'
+  parser:
+    attribute:
+      block: true # false
+      title: true
+    autoHeadingID: true
+    autoHeadingIDType: github
+    wrapStandAloneImageWithinParagraph: false # true
+  renderHooks:
+    image:
+      enableDefault: false
+    link:
+      enableDefault: false
+  renderer:
+    hardWraps: true # false
+    unsafe: false
+    xhtml: false
+
+highlight:
+  anchorLineNos: true # false
+  codeFences: true
+  guessSyntax: false
+  hl_Lines: ""
+  hl_inline: false
+  lineAnchors: ""
+  lineNoStart: 1
+  lineNos: false
+  lineNumbersInTable: true
+  noClasses: false # true
+  noHl: false
+  style: monokai
+  tabWidth: 4

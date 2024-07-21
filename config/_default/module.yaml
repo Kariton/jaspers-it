@@ -1,0 +1,21 @@
+imports:
+  - path: github.com/kariton/perplex
+
+mounts:
+  # EN content
+  - source: 'content/en'
+    target: 'content'
+    lang: 'en'
+  # DE content
+  - source: 'content/de'
+    target: 'content'
+    lang: 'de'
+
+#------------------------------------------------------------------------------
+# Fill in the missing translations
+#------------------------------------------------------------------------------
+
+  # This fills in the gaps in DE content with EN content
+  - source: 'content/en'
+    target: 'content'
+    lang: 'de'

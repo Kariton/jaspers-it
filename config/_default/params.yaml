@@ -1,0 +1,25 @@
+#
+# Additional parameters
+#
+
+description: This is my simple homepage.
+
+# Site wide favicon for browser and OS display
+favicon:
+  svg: favicon/favicon.svg
+  png: favicon/favicon.png
+
+imaging:
+  sizestep: 25
+  fallback_width: 660
+
+modOpenIn:
+  name: VSCodium
+  protocol: vscodium
+# fathomSiteID: ABCDEFG
+
+render_hooks:
+  link:
+    errorLevel: warning
+  fragments:
+    errorLevel: ignore

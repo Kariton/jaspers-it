@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveWhenNoErrors": true,
+    "files.watcherExclude": {
+        "themes/**": true
+    },
+    "files.readonlyInclude": {
+        "themes/**": true
+    }
+}

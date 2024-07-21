@@ -1,0 +1,43 @@
+---
+services:
+  hugo-dev:
+    profiles: [dev]
+    build:
+      context: .
+      args:
+        HUGO_ENV: development
+        HUGO_ENVIRONMENT: development
+    ports:
+      - 127.0.0.1:1313:80
+    networks:
+      - hugo-net
+
+  hugo-prod:
+    profiles: [prod]
+    build:
+      context: .
+      args:
+        HUGO_ENV: production
+        HUGO_ENVIRONMENT: production
+    ports:
+      - 127.0.0.1:1314:80
+    networks:
+      - hugo-net
+
+  hugo-deploy:
+    profiles: [deploy]
+    build:
+      context: .
+      dockerfile: Dockerfile-deploy-hetzner-webhost
+      args:
+        HUGO_ENV: production
+        HUGO_ENVIRONMENT: production
+        SFTP_USERNAME: "${SFTP_USERNAME}"
+        SFTP_SSH_KEY: "${SFTP_SSH_KEY}"
+        SFTP_HOST: "${SFTP_HOST}"
+        SFTP_DIRECTORY: "${SFTP_DIRECTORY}"
+    networks:
+      - hugo-net
+
+networks:
+  hugo-net:

@@ -1,0 +1,29 @@
+en:
+  languageCode: en-US
+  languageName: English
+  weight: 1
+  menu:
+    main_social:
+      - name: GitHub
+        pre: github
+        url: https://github.com/kariton/jaspers-it
+        weight: 1
+      - name: RSS
+        pre: rss
+        url: /index.xml
+        weight: 9999
+
+de:
+  languageCode: de-DE
+  languageName: Deutsch
+  weight: 2
+  menu:
+    main_social:
+      - name: GitHub
+        pre: github
+        url: https://github.com/kariton/jaspers-it
+        weight: 1
+      - name: RSS
+        pre: rss
+        url: /de/index.xml
+        weight: 9999

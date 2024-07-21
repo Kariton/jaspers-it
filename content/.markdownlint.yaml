@@ -1,0 +1,31 @@
+# Line length should not be limited because we use soft wrapping
+MD013: false  
+# Empty lines above and below headings
+MD022:
+  lines_above: 1
+  lines_below: 0
+# Duplicate headings
+MD024: 
+  siblings_only: true
+  allow_different_nesting: true
+# Ordered list
+MD029: 
+  style: "ordered"
+# No inline HTML. But because inline HTML is already skipped and removed
+# with our Hugo configuration, the rule is not necessary. 
+# And it would also be triggered by angled brackets intended for the typographer.
+MD033: false 
+# Images need to have an alternative description. But because Perplex allows to 
+# provide it in the resources and issues a warning in case its missing, there is
+# no need to throw this warning
+MD045: false
+# Codeblock style
+MD046:
+  style: "fenced"
+# Emphasis style
+MD049:
+  style: "underscore"
+# Strong style
+MD050:
+  style: "asterisk"  
+MD051: false

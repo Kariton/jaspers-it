@@ -1,0 +1,5 @@
+src: logo/kvm/kvm-logo.svg
+alt: KVM logo
+link: https://www.linux-kvm.org
+type: symbol
+box: none

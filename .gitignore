@@ -1,0 +1,8 @@
+.env
+
+### Hugo template
+# Generated files by hugo
+public
+resources
+.hugo_build.lock
+hugo_stats.json
