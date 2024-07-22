@@ -25,12 +25,12 @@ aliases: []
 fmContentType: content-standalone
 _build:
     list: never
-lastmod: 2024-07-19T02:26:40.305Z
+lastmod: 2024-07-22T21:23:13.051Z
 ---
 
-Sie haben eine URL aufgerufen, die nicht mehr vorhanden ist.
+Du hast eine URL aufgerufen, die nicht mehr vorhanden ist.
 Es gibt keine Möglichkeit festzustellen, wie dies passiert ist,
-aber wir entschuldigen uns für etwaige Unannehmlichkeiten.
+aber ich entschuldige mich für etwaige Unannehmlichkeiten.
 {.p-first} <!--more-->
 
-Sie können den [vollständigen Inhalt dieser Seite durchsuchen](/search).
+Du könntest den [vollständigen Inhalt dieser Seite durchsuchen](/search).
