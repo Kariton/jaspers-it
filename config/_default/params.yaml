@@ -26,7 +26,6 @@ render_hooks:
 
 giscus:
   enable: true
-  src: "https://giscus.app/client.js"
   repo: "Kariton/jaspers-it"
   repo_id: "R_kgDOMYPaxg"
   category: "giscus"
