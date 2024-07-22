@@ -23,3 +23,18 @@ render_hooks:
     errorLevel: warning
   fragments:
     errorLevel: ignore
+
+giscus:
+  enable: true
+  src: "https://giscus.app/client.js"
+  repo: "Kariton/jaspers-it"
+  repo_id: "R_kgDOMYPaxg"
+  category: "giscus"
+  category_id: "DIC_kwDOMYPaxs4ChFa0"
+  mapping: "pathname"
+  strict: true
+  reactions_enabled: true
+  emit_metadata: false
+  input_position: "top"
+  theme: "preferred_color_scheme"
+  loading: "lazy"
