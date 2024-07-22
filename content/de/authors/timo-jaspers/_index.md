@@ -39,15 +39,14 @@ toc: true
 aliases:
   - /about
 fmContentType: author
-lastmod: 2024-07-20T18:44:06.452Z
+lastmod: 2024-07-22T05:11:23.203Z
 ---
 
 Fachinformatiker für Systemintegration
 {.p-first} <!--more-->
 
-Hier teile ich Einblicke in meine Homelab-Basteleien als auch
-beruflichen Projekte. Einige dieser Projekte sind nützlich,
-andere hingegen einfach nur zum Spaß oder ein wenig verrückt.
+Hier teile ich Einblicke in meine Homelab-Basteleien sowie
+das eine oder andere aus dem Berufsalltag.
 
 Außerdem schreibe ich über alles andere, was mich interessiert,
 wie zum Beispiel meine Ameisen, meine Katze oder andere

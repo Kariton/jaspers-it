@@ -39,16 +39,16 @@ toc: true
 aliases:
   - /about
 fmContentType: author
-lastmod: 2024-07-18T18:23:08.130Z
+lastmod: 2024-07-22T05:11:21.305Z
 ---
 
 Computer Science Expert Subject Area: System Integration
 {.p-first}
 <!--more-->
 
-Here I share insights into my homelab tinkering as well as professional projects.
-Some of these projects are valuable, while others are just for fun and might
-be a bit silly.
+
+Here, I share insights into my home lab tinkering as well as
+various aspects of my professional life.
 
 Additionally, I write about anything else that interests me,
 such as my ants, my cat, or other experiences and projects.
