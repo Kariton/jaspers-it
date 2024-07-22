@@ -640,6 +640,13 @@
             "de"
           ],
           "required": true
+        },
+        {
+          "title": "Comments with giscus",
+          "name": "disableGiscus",
+          "default": "false",
+          "type": "boolean",
+          "description": "Disable comments via giscus.app; works only when configured in params anyway."
         }
       ]
     },
