@@ -15,7 +15,7 @@ resources: {}
 toc: true
 aliases: []
 fmContentType: content-standalone
-lastmod: 2024-07-20T22:41:47.182Z
+lastmod: 2024-07-22T05:24:17.268Z
 ---
 
 Über die Webserverprotokolle hinaus werden keine weiteren Daten erhoben, gespeichert oder ausgewertet.
@@ -28,11 +28,11 @@ Rein zu Debugging-Zwecken würde ich die Webserver Logs des Hosting-Anbieters ü
 
 ## Hosting-Anbieter
 
-Diese Website wird auf [Hetzner Webhosting](https://www.hetzner.com/webhosting) gehostet, das den [GDPR-Vorschriften](https://gdpr-info.eu) entspricht.
+Diese Website wird auf [Hetzner Webhosting](https://www.hetzner.com/webhosting) gehostet, das den Europäischen [GDPR-Vorschriften](https://gdpr-info.eu) entspricht.
 
 ### Datenschutzrichtlinie des Hosting-Anbieters
 
-**Hetzner Webhosting**
+#### Hetzner Webhosting
 
 > Logfiles speichern unter anderem die IP-Adresse, den verwendeten Browser, Uhrzeit und Datum und das genutzte System eines Seitenbesuchers. Bei uns werden nur anonymisierte IP-Adressen von Besuchern der Website gespeichert. Auf Webserver-Ebene erfolgt dies dadurch, dass im Logfile standardmäßig statt der tatsächlichen IP-Adresse des Besuchers z.B. `<123.123.123.123>` eine IP-Adresse `<123.123.123.XXX>` gespeichert wird, wobei XXX ein Zufallswert zwischen 1 und 254 ist. Die Herstellung eines Personenbezuges ist nicht mehr möglich.
 > -- [Hetzner Datenschutz FAQ](https://docs.hetzner.com/de/general/general-terms-and-conditions/data-privacy-faq/)

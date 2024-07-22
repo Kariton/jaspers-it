@@ -16,7 +16,7 @@ toc: true
 aliases:
     - /privacy/
 fmContentType: content-standalone
-lastmod: 2024-07-20T22:41:57.618Z
+lastmod: 2024-07-22T05:24:07.246Z
 ---
 
 No data is collected, stored, or analyzed beyond web server logs.
@@ -29,11 +29,11 @@ Purely for debugging purposes, I might review the web server logs provided by th
 
 ## Hosting Provider
 
-This website is hosted on [Hetzner Webhosting](https://www.hetzner.com/webhosting), which complies with [GDPR](https://gdpr-info.eu) regulations.
+This website is hosted on [Hetzner Webhosting](https://www.hetzner.com/webhosting), which complies with the European [GDPR](https://gdpr-info.eu) regulations.
 
 ### Hosting Provider Privacy Policy
 
-**Hetzner Webhosting**
+#### Hetzner Webhosting
 
 > For our customers' websites, the log files store, among other things, the IP address, the browser visitors use, the time and date of the visits, and the system that visitors use. We at Hetzner Online only store pseudonymised IP addresses of visitors to the website. At the web server level, this happens by default by storing an IP address `<123.123.123.XXX>` in the log file instead of the visitor's actual IP address, for example, `<123.123.123.123>`. The XXX is a random value between 1 and 254, so it is no longer possible to establish the true identity of the visitor.
 > -- [Hetzner Data Privacy FAQ](https://docs.hetzner.com/general/general-terms-and-conditions/data-privacy-faq/)
