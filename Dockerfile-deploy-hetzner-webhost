@@ -19,14 +19,14 @@ RUN npm_config_yes=true npx pagefind
 #####################################################################
 FROM alpine:latest
 
-ARG SFTP_USERNAME
-ENV SFTP_USERNAME ${SFTP_USERNAME}
-ARG SFTP_SSH_KEY
-ENV SFTP_SSH_KEY ${SFTP_SSH_KEY}
-ARG SFTP_HOST
-ENV SFTP_HOST ${SFTP_HOST}
-ARG SFTP_DIRECTORY
-ENV SFTP_DIRECTORY ${SFTP_DIRECTORY}
+ARG HETZNER_SFTP_USERNAME
+ENV HETZNER_SFTP_USERNAME ${HETZNER_SFTP_USERNAME}
+ARG HETZNER_SFTP_SSH_KEY
+ENV HETZNER_SFTP_SSH_KEY ${HETZNER_SFTP_SSH_KEY}
+ARG HETZNER_SFTP_HOST
+ENV HETZNER_SFTP_HOST ${HETZNER_SFTP_HOST}
+ARG HETZNER_SFTP_DIRECTORY
+ENV HETZNER_SFTP_DIRECTORY ${HETZNER_SFTP_DIRECTORY}
 
 RUN apk add --update-cache \
         openssh \
@@ -34,14 +34,14 @@ RUN apk add --update-cache \
     && rm -rf /var/cache/apk/*
 
 RUN mkdir -p ~/.ssh &&\
-    echo -e "${SFTP_SSH_KEY}" > ~/.ssh/id_ed25519  &&\
+    echo -e "${HETZNER_SFTP_SSH_KEY}" > ~/.ssh/id_ed25519  &&\
     chmod 600 ~/.ssh/id_ed25519 && \
-    ssh-keyscan -p 22 -t ed25519 "${SFTP_HOST}" >> ~/.ssh/known_hosts
+    ssh-keyscan -p 22 -t ed25519 "${HETZNER_SFTP_HOST}" >> ~/.ssh/known_hosts
 
 COPY --from=builder /src/public /public
 
 RUN lftp -e " \
         set sftp:connect-program 'ssh -a -x -i ~/.ssh/id_ed25519'; \
-        mirror -vv --no-empty-dirs --no-symlinks --delete --reverse ./public ${SFTP_DIRECTORY}; \
+        mirror -vv --no-empty-dirs --no-symlinks --delete --reverse ./public ${HETZNER_SFTP_DIRECTORY}; \
         bye \
-        " -u "${SFTP_USERNAME}", sftp://${SFTP_HOST}
+        " -u "${HETZNER_SFTP_USERNAME}", sftp://${HETZNER_SFTP_HOST}

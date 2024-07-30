@@ -1,34 +1,26 @@
-name: Deployment to Hetzner Webhost
+name: Deploy to Hetzner Webhost
 
 on:
-  workflow_run:
-    workflows: ["Hugo build"]
-    types:
-      - completed
-
-concurrency:
-  group: "hugo"
-  cancel-in-progress: true
+  workflow_call:
 
 defaults:
   run:
     shell: bash
 
 jobs:
-  deploy:
+  hetzner_webhost:
     runs-on: ubuntu-latest
+    environment: "${{ github.ref_name == 'main' && 'production' || 'draft' }}-hetzner_webhost"
     steps:
       - name: Install lftp
         run: |
-          sudo apt update &&\
-          sudo apt install lftp -y
+          sudo apt update
+          sudo apt install -y lftp
 
-      - name: Download artifact
+      - name: Download public directory as artifact
         uses: actions/download-artifact@v4
         with:
-          run-id: ${{ github.event.workflow_run.id }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          name: public
+          name: ${{ github.ref_name }}-public
           path: ./public
 
       - name: Set up SSH key
@@ -38,8 +30,8 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p 22 -t ed25519 "${HOST}" >> ~/.ssh/known_hosts
         env:
-          SSH_KEY: ${{ secrets.SFTP_SSH_KEY }}
-          HOST: ${{ secrets.SFTP_HOST }}
+          SSH_KEY: ${{ secrets.HETZNER_SFTP_SSH_KEY }}
+          HOST: ${{ secrets.HETZNER_SFTP_HOST }}
 
       - name: Deploy to Hetzner Webhosting
         run: |
@@ -49,6 +41,6 @@ jobs:
               bye \
               " -u "${USERNAME}", sftp://${HOST}
         env:
-          USERNAME: ${{ secrets.SFTP_USERNAME }}
-          HOST: ${{ secrets.SFTP_HOST }}
-          DIRECTORY: ${{ secrets.SFTP_DIRECTORY }}
+          USERNAME: ${{ secrets.HETZNER_SFTP_USERNAME }}
+          HOST: ${{ secrets.HETZNER_SFTP_HOST }}
+          DIRECTORY: ${{ secrets.HETZNER_SFTP_DIRECTORY }}
