@@ -1,0 +1,9 @@
+#
+# Additional parameters
+#
+
+giscus:
+  enable: false
+
+robotsDisallow:
+  - /

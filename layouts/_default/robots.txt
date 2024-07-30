@@ -1,12 +1,12 @@
 User-agent: *
 
-{{ range .Site.Params.robotsDisallow }}
+{{ range .Site.Params.robotsDisallow -}}
 Disallow: {{ . }}
-{{ end }}
+{{ end -}}
 
-{{ range where .Site.Pages "Params.robotsDisallow" true }}
+{{ range where .Site.Pages "Params.robotsDisallow" true -}}
 Disallow: {{ .RelPermalink }}
-{{ end }}
+{{ end -}}
 
 {{ with .Sitemap }}
 Sitemap: {{ .Filename | absURL }}

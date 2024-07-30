@@ -32,10 +32,10 @@ services:
       args:
         HUGO_ENV: production
         HUGO_ENVIRONMENT: production
-        SFTP_USERNAME: "${SFTP_USERNAME}"
-        SFTP_SSH_KEY: "${SFTP_SSH_KEY}"
-        SFTP_HOST: "${SFTP_HOST}"
-        SFTP_DIRECTORY: "${SFTP_DIRECTORY}"
+        HETZNER_SFTP_USERNAME: "${HETZNER_SFTP_USERNAME}"
+        HETZNER_SFTP_SSH_KEY: "${HETZNER_SFTP_SSH_KEY}"
+        HETZNER_SFTP_HOST: "${HETZNER_SFTP_HOST}"
+        HETZNER_SFTP_DIRECTORY: "${HETZNER_SFTP_DIRECTORY}"
     networks:
       - hugo-net
 

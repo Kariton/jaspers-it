@@ -40,4 +40,4 @@
     Language: {{ range $i, $l := .Site.Languages }}{{ if $i }}, {{ end }}{{ .LanguageName }}{{ end }}
     Doctype: HTML5
     Standards: HTML5, CSS3, Open Graph protocol, Schema.org
-    Components: Hugo, Perplex Theme
+    Components: Hugo, Perplex Theme, giscus

@@ -1,8 +1,10 @@
-name: Hugo build
+name: Build with Hugo
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
+      - draft
     paths:
       - '.github/**'
       - 'assets/**'
@@ -19,7 +21,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: "hugo"
+  group: ${{ github.ref_name }}
   cancel-in-progress: true
 
 defaults:
@@ -37,7 +39,7 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: recursive
@@ -45,30 +47,30 @@ jobs:
       - name: Create LFS file list
         run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
 
-      - name: LFS Cache
-        uses: actions/cache@v3
+      - name: Fetch LFS directory from cache
+        uses: actions/cache@v4
         with:
           path: .git/lfs/objects
-          key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}
+          key: ${{ runner.os }}-lfs-${{ github.ref_name }}-${{ hashFiles('.lfs-assets-id') }}
           restore-keys: |
-            ${{ runner.os }}-lfs
+            ${{ runner.os }}-lfs-${{ github.ref_name }}
 
       - name: Git LFS Pull
         run: git lfs pull
 
       - name: Fetch resources directory from cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: resources
-          key: ${{ runner.os }}-hugo-resources-directory-${{ github.run_id }}
+          key: ${{ runner.os }}-hugo-resources-directory-${{ github.ref_name }}-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-hugo-resources-directory  
+            ${{ runner.os }}-hugo-resources-directory-${{ github.ref_name }}
 
       - name: Build with Hugo
         env:
+          HUGO_ENVIRONMENT: ${{ github.ref_name == 'main' && 'production' || 'development' }}
           # For maximum backward compatibility with Hugo modules
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
+          HUGO_ENV: ${{ github.ref_name == 'main' && 'production' || 'development' }}
         run: |
           hugo \
             --gc \
@@ -77,9 +79,14 @@ jobs:
       - name: Run pagefind
         run: npm_config_yes=true npx pagefind
 
-      - name: Upload artifact
+      - name: Upload public directory as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: public
+          name: ${{ github.ref_name }}-public
           path: ./public
           if-no-files-found: error
+
+  deploy:
+    needs: build
+    uses: ./.github/workflows/deploy-hetzner_webhost.yml
+    secrets: inherit
