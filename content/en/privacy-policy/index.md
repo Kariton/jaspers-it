@@ -16,7 +16,7 @@ toc: true
 aliases:
     - /privacy/
 fmContentType: content-standalone
-lastmod: 2024-07-23T22:07:02.411Z
+lastmod: 2024-08-04T19:00:47.569Z
 ---
 
 Your personal data is invaluable and exclusively yours. It is your private property and must be protected as such!
@@ -24,15 +24,14 @@ Your personal data is invaluable and exclusively yours. It is your private prope
 
 ## General
 
-I have no interest in your personal data!
-
 Since I want to protect your data, I carefully select all components used to operate this site to the best of my knowledge and belief.
 
 However, I rely on the data protection practices of the providers of various services to protect your personal data. Only services that claim to comply at least with the [General Data Protection Regulation (GDPR)](https://www.edps.europa.eu/general-data-protection-regulation_en) and the [ePrivacy Directive](https://www.edps.europa.eu/data-protection/data-protection/glossary/e_en#e-privacy_directive2009-136-ec) are used.
 
 For maximum transparency, I have detailed which services I use and how they handle the data collected or what data I have access to.
 
-I quote partial excerpts of the providers policies as of today (07/2024).
+I quote partial excerpts of the providers policies at the current
+time. (as of 07/2024)
 Each of these quotes includes a corresponding source reference.
 I cannot rule out changes to these by the service providers.
 All information is provided without guarantee.
@@ -45,7 +44,7 @@ I do not collect, store, or analyze any cookies or personal information.
 
 This website is hosted by [Hetzner Webhosting](https://www.hetzner.com/webhosting).
 
-### Privacy Policy of Hetzner Webhosting
+### Data collected by Hetzner Webhosting
 
 > For our customers' websites, the log files store, among other things, the IP address, the browser visitors use, the time and date of the visits, and the system that visitors use. We at Hetzner Online only store pseudonymised IP addresses of visitors to the website. At the web server level, this happens by default by storing an IP address `<123.123.123.XXX>` in the log file instead of the visitor's actual IP address, for example, `<123.123.123.123>`. The XXX is a random value between 1 and 254, so it is no longer possible to establish the true identity of the visitor.
 > --- [Hetzner Data Privacy FAQ](https://docs.hetzner.com/general/general-terms-and-conditions/data-privacy-faq/)
@@ -65,7 +64,7 @@ This requires a GitHub account for which GitHub's [Privacy Policy](https://docs.
 
 Alternatively, if the discussion already exists, you can also comment [directly via GitHub](https://github.com/Kariton/jaspers-it/discussions/categories/giscus).
 
-### Privacy Policy of giscus
+### Data collected by giscus
 
 > We do not collect any data.
 > [...]
@@ -76,6 +75,8 @@ Alternatively, if the discussion already exists, you can also comment [directly 
 
 I currently have nothing implemented to track or analyze user movements on my website.
 However, I plan to use [Fathom Analytics](https://usefathom.com) in the future.
+
+Fathom Analytics can analyse user behaviour without cookies or any personalised information.
 
 ### Search Engines
 
@@ -97,4 +98,4 @@ Other accesses, such as direct visits or links from other websites, are not affe
 
 This privacy policy may change at any time.
 
-I cannot verify the claims made by third-party service providers and have no connection to the mentioned services. Please review this policy periodically for updates and also check the privacy policies of the third-party providers used.
+I cannot verify the claims made by third-party service providers and am not affiliated with the mentioned services. Please review this policy periodically for updates and also check the privacy policies of the third-party providers used.

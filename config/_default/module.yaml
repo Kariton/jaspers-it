@@ -1,3 +1,7 @@
+#
+# Configuration section for Modules
+#
+
 imports:
   - path: github.com/kariton/perplex
 

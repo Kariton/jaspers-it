@@ -1,2 +1,7 @@
+##
+## Main configuration file
+##
+
 title: Jaspers IT DRAFT
 baseURL: 'https://draft.jaspers.it'
+buildDrafts: true

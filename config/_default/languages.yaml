@@ -1,7 +1,13 @@
+#
+# Configuration section for Languages
+#
+
 en:
   languageCode: en-US
   languageName: English
   weight: 1
+  params:
+    description: My small personal website
   menu:
     main_social:
       - name: GitHub
@@ -17,6 +23,8 @@ de:
   languageCode: de-DE
   languageName: Deutsch
   weight: 2
+  params:
+    description: Meine kleine persönliche Webseite
   menu:
     main_social:
       - name: GitHub

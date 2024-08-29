@@ -39,26 +39,23 @@ toc: true
 aliases:
   - /about
 fmContentType: author
-lastmod: 2024-07-22T05:11:21.305Z
+lastmod: 2024-08-27T21:44:00.320Z
 ---
-
-Computer Science Expert Subject Area: System Integration
-{.p-first}
-<!--more-->
-
 
 Here, I share insights into my home lab tinkering as well as
 various aspects of my professional life.
+{.p-first}
+<!--more-->
 
 Additionally, I write about anything else that interests me,
-such as my ants, my cat, or other experiences and projects.
+such as my ants, my cat, or other projects.
 
 ---
 
-Since I bought my first gaming PC in 2016, I have been engaged in homelabbing.
+Since I bought my first gaming PC in 2014, I have been engaged in homelabbing.
 It all started with virtualized game servers in [VirtualBox](https://www.virtualbox.org), port forwarding, and regularly scripted backups of game save files.
 
-A year later, I bought my first home server and migrated from [VirtualBox](https://www.virtualbox.org) to [Proxmox](https://www.proxmox.com/en/proxmox-virtual-environment/overview).
+A few years later, I bought my first home server and migrated from [VirtualBox](https://www.virtualbox.org) to [Proxmox](https://www.proxmox.com/en/proxmox-virtual-environment/overview).
 With an eye on security risks on the **W**orld **W**ide **W**est, I began virtualizing
 a firewall, implementing VLANs, and delving deep into IT administration.
 

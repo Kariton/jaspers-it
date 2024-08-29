@@ -39,25 +39,23 @@ toc: true
 aliases:
   - /about
 fmContentType: author
-lastmod: 2024-07-22T05:11:23.203Z
+lastmod: 2024-08-27T21:43:49.219Z
 ---
-
-Fachinformatiker für Systemintegration
-{.p-first} <!--more-->
 
 Hier teile ich Einblicke in meine Homelab-Basteleien sowie
 das eine oder andere aus dem Berufsalltag.
+{.p-first}
+<!--more-->
 
 Außerdem schreibe ich über alles andere, was mich interessiert,
-wie zum Beispiel meine Ameisen, meine Katze oder andere
-Erlebnisse und Projekte.
+wie zum Beispiel meine Ameisen, meine Katze oder sonstige Projekte.
 
 ---
 
-Seit ich 2016 meinen ersten Gaming-PC gekauft habe, beschäftige ich mich mit Homelabbing.
+Seit ich 2014 meinen ersten Gaming-PC gekauft habe, beschäftige ich mich mit Homelabbing.
 Alles begann mit virtualisierten Spielservern in [VirtualBox](https://www.virtualbox.org), Portweiterleitung und regelmäßig geskripteten Backups von Spielständen.
 
-Ein Jahr später kaufte ich meinen ersten Heimserver und migrierte von [VirtualBox](https://www.virtualbox.org) zu [Proxmox](https://www.proxmox.com/en/proxmox-virtual-environment/overview).
+Ein paar Jahre später kaufte ich meinen ersten Heimserver und migrierte von [VirtualBox](https://www.virtualbox.org) zu [Proxmox](https://www.proxmox.com/en/proxmox-virtual-environment/overview).
 Mit Blick auf Sicherheitsrisiken im **W**orld **W**ide **W**est begann ich, eine Firewall zu virtualisieren, VLANs zu implementieren und tauchte tief in die IT-Administration ein.
 
 Anfangs konzentrierte ich mich darauf, die Grundlagen von Linux, IT-Infrastruktur und Infrastrukturmanagement in meinem Homelab zu erlernen.

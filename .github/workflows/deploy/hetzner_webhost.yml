@@ -1,5 +1,3 @@
-name: Deploy to Hetzner Webhost
-
 on:
   workflow_call:
 

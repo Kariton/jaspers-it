@@ -3,7 +3,6 @@
 #
 
 # They are all turned on initially.
-# Please apply the appropriate settings for your site.
 
 disqus:
   disable: true

@@ -1,6 +1,6 @@
 [![Hugo](https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo)](https://hugo.io/)
 [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=plastic)](https://github.com/kariton/jaspers-it/blob/main/LICENSE)
-[![Build with Hugo](https://github.com/Kariton/jaspers-it/actions/workflows/build-hugo.yml/badge.svg)](https://github.com/Kariton/jaspers-it/actions/workflows/build-hugo.yml)
+[![Publish](https://github.com/Kariton/jaspers-it/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/Kariton/jaspers-it/actions/workflows/publish.yml)
 
 # Codebase for my personal website [jaspers.it](https://jaspers.it)
 

@@ -1,4 +1,4 @@
-name: Build with Hugo
+name: Publish
 
 on:
   push:
@@ -88,5 +88,5 @@ jobs:
 
   deploy:
     needs: build
-    uses: ./.github/workflows/deploy-hetzner_webhost.yml
+    uses: ./.github/workflows/deploy/hetzner_webhost.yml
     secrets: inherit

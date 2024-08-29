@@ -2,8 +2,6 @@
 # Additional parameters
 #
 
-description: This is my simple homepage.
-
 # Site wide favicon for browser and OS display
 favicon:
   svg: favicon/favicon.svg

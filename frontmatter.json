@@ -128,26 +128,6 @@
       ]
     },
     {
-      "title": "Legal",
-      "defaultLocale": "en",
-      "path": "[[workspace]]/content",
-      "filePrefix": "",
-      "previewPath": "{{locale|ignore:en}}/legal/{{pathToken.relPath}}",
-      "locales": [
-        {
-          "title": "English",
-          "locale": "en",
-          "path": "/en/legal"
-        },
-        {
-          "title": "German",
-          "locale": "de",
-          "path": "/de/legal"
-        }
-      ],
-      "disableCreation": true
-    },
-    {
       "title": "News",
       "defaultLocale": "en",
       "path": "[[workspace]]/content",
@@ -163,6 +143,28 @@
           "title": "German",
           "locale": "de",
           "path": "/de/news"
+        }
+      ],
+      "contentTypes": [
+        "article"
+      ]
+    },
+    {
+      "title": "Article",
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content",
+      "filePrefix": "",
+      "previewPath": "{{locale|ignore:en}}/article/{{pathToken.relPath}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "/en/article"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "/de/article"
         }
       ],
       "contentTypes": [
@@ -644,7 +646,7 @@
         {
           "title": "Comments with giscus",
           "name": "disableGiscus",
-          "default": "false",
+          "default": false,
           "type": "boolean",
           "description": "Disable comments via giscus.app; works only when configured in params anyway."
         }

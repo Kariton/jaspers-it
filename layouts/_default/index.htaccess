@@ -1,5 +1,5 @@
 # error pages
-{{- if .Site.IsMultiLingual }}
+{{- if hugo.IsMultilingual }}
 ErrorDocument 404 {{ print .Site.LanguagePrefix "/" | absURL }}404/
 {{ else }}
 ErrorDocument 404 {{ "/404/" absURL }}

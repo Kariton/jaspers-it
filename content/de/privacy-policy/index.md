@@ -15,7 +15,7 @@ resources: {}
 toc: true
 aliases: []
 fmContentType: content-standalone
-lastmod: 2024-07-23T22:05:40.130Z
+lastmod: 2024-07-30T22:09:14.218Z
 ---
 
 Deine persönlichen Daten sind unbezahlbar und ausschließlich deine. Sie sind dein privates Eigentum und müssen als solches geschützt werden!
@@ -23,15 +23,14 @@ Deine persönlichen Daten sind unbezahlbar und ausschließlich deine. Sie sind d
 
 ## Generell
 
-Ich habe kein Interesse an deinen persönlichen Daten!
-
 Da ich deine Daten schützen will, wähle ich alle Bestandteile für den Betrieb dieser Seite sorgfältig und nach bestem Wissen und Gewissen aus.
 
 Jedoch bin ich für den Schutz deiner persönlichen Daten auf die Datenschutzpraktiken der Anbieter verschiedener Dienstleistungen angewiesen. Es werden ausschließlich Dienste verwendet, die angeben, sich mindestens an die [europäische Datenschutz-Grundverordnung (DSGVO)](https://www.bfdi.bund.de/DE/DerBfDI/Inhalte/Datenschutzpfad/DSGVO.html) und [ePrivacy Verordnung](https://www.bfdi.bund.de/DE/Fachthemen/Inhalte/Telemedien/ePrivacy_Verordnung.html) zu halten.
 
 Für maximale Transparenz habe ich aufgeschlüsselt, welche Dienstleistungen ich nutze und wie diese mit den anfallenden Daten umgehen oder auf welche Daten ich Zugriff habe.
 
-Ich zitiere teilweise Ausschnitte und/oder übersetze aus dem Englischen die Richtlinien der Anbieter zum aktuellen Zeitpunkt (07/2024).
+Ich zitiere teilweise Ausschnitte und/oder übersetze aus dem Englischen die Richtlinien der Anbieter zum aktuellen Zeitpunkt. (Stand: 07/2024)
+
 Unter jedem dieser Zitate ist eine entsprechende Quellenangabe.
 Änderungen an diesen durch die Dienstleister kann ich nicht ausschließen.
 Alle Angaben ohne Gewähr.
@@ -44,7 +43,7 @@ Ich erfasse, speichere oder analysiere keine Cookies oder personenbezogenen Info
 
 Diese Website wird bei [Hetzner Webhosting](https://www.hetzner.com/webhosting) betrieben.
 
-### Datenschutzrichtlinie von Hetzner Webhosting
+### Anfallende Daten bei Hetzner Webhosting
 
 > Logfiles speichern unter anderem die IP Adresse, den verwendeten Browser, Uhrzeit und Datum und das genutzte System eines Seitenbesuchers. Bei uns werden nur anonymisierte IP Adressen von Besuchern der Website gespeichert. Auf Webserver-Ebene erfolgt dies dadurch, dass im Logfile standardmäßig statt der tatsächlichen IP Adresse des Besuchers z.B. `<123.123.123.123>` eine IP Adresse `<123.123.123.XXX>` gespeichert wird, wobei XXX ein Zufallswert zwischen 1 und 254 ist. Die Herstellung eines Personenbezuges ist nicht mehr möglich.
 > --- [Hetzner Datenschutz FAQ](https://docs.hetzner.com/de/general/general-terms-and-conditions/data-privacy-faq/)
@@ -64,7 +63,7 @@ Um kommentieren zu können, ist ein GitHub Konto, für das die [Datenschutzricht
 
 Alternativ kannst du, sofern die Diskussion bereits existiert, auch [direkt über GitHub](https://github.com/Kariton/jaspers-it/discussions/categories/giscus) kommentieren.
 
-### Datenschutzrichtlinie von giscus
+### Anfallende Daten bei giscus
 
 Aufgrund einer fehlenden deutschen Fassung hier ein übersetzter Auszug der giscus Datenschutzrichtlinie:
 
@@ -77,6 +76,8 @@ Aufgrund einer fehlenden deutschen Fassung hier ein übersetzter Auszug der gisc
 
 Ich habe (derzeit) nichts implementiert, um Bewegungsmuster auf meiner Website zu erfassen oder zu analysieren.
 Ich plane jedoch, in Zukunft [Fathom Analytics](https://usefathom.com) zu verwenden.
+
+Fathom Analytics kann das Nutzerverhalten ohne Cookies und ohne personalisierte Informationen analysieren.
 
 ### Suchmaschinen
 

@@ -1,6 +1,6 @@
 ---
 title: Blog
-description: Blog about stuff
+description: null
 linktitle: null
 subtitle: false
 draft: false
@@ -20,5 +20,5 @@ toc: false
 aliases: []
 url: /
 fmContentType: content-categorie
-lastmod: 2024-07-20T18:01:05.735Z
+lastmod: 2024-07-30T21:55:00.516Z
 ---

@@ -17,7 +17,7 @@ fmContentType: content-standalone
 type: search
 _build:
     list: never
-lastmod: 2024-07-19T02:26:40.289Z
+lastmod: 2024-07-30T21:22:37.341Z
 ---
 
 Durchsuchen Sie den Volltextinhalt dieser Website. Ausgeschlossen von der Suche sind Latex-Codeblöcke.

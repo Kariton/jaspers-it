@@ -1,13 +1,13 @@
 ---
 title: Documentation
-description: Documentation about stuff
+description: null
 linktitle: null
 subtitle: true
 draft: false
 menu:
     main:
-        identifier: docs
         name: Docs
+        identifier: docs
         weight: 20
 frontmatter_configure_seo: false
 featured: null
@@ -24,5 +24,5 @@ resources:
 toc: false
 aliases: []
 fmContentType: content-categorie
-lastmod: 2024-07-19T02:26:40.264Z
+lastmod: 2024-08-27T21:08:44.651Z
 ---
