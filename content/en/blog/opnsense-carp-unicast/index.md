@@ -29,8 +29,9 @@ OPNsense added support for CARP peering over unicast with the last update, relea
 
 ## What is CARP
 
-CARP is the OpenBSD implementation of VRRP by CISCO.
+CARP is the OpenBSD implementation of VRRP or HSRP by CISCO.
 CARP stands for **C**ommon **A**ddress **R**edundancy **P**rotocol.
+HSRP is Cisco's proprietary solution **H**ot **S**tandby **R**outer **P**rotocol.
 VRRP on the other hand stands for **V**irtual **R**outer **R**edundancy **P**rotocol.
 
 Due to patent and licensing issues CARP was created as alternative to VRRP and serves the same porpuse.
