@@ -5,3 +5,5 @@
 title: Jaspers IT DRAFT
 baseURL: 'https://draft.jaspers.it'
 buildDrafts: true
+buildExpired: true
+buildFuture: true
